@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wedding Invitation | Save The Date</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Floating Audio & Auto-Scroll Controller -->
+  <div id="floating-controls" class="floating-controls hidden">
+    <button id="toggle-scroll-btn" class="ctrl-btn" title="Pause / Resume Scroll">⏸ Pause Tour</button>
+    <button id="toggle-music-btn" class="ctrl-btn" title="Mute / Unmute Music">🔊 Sound</button>
+  </div>
+
+  <!-- Screen 1: Animated Landing / Cover Screen -->
+  <section id="landing-screen" class="landing-screen">
+    <div class="landing-content">
+      <p class="sub-greeting">॥ శ్రీరస్తు సుభమస్తు అవిఘ్నమస్తు ॥</p>
+      <p class="invite-label">Together With Their Families</p>
+      <h1 class="couple-title">Prashanth&amp; Sahithi</h1>
+      <p class="tagline">Cordially invite you to celebrate their wedding ceremony</p>
+      
+      <!-- Animated Entrance Button -->
+      <button id="open-invite-btn" class="animated-btn">
+        <span class="btn-glow"></span>
+        <span class="btn-text">Open Invitation 💌</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Screen 2: Main Invitation Site -->
+  <main id="main-content" class="main-content hidden">
+
+    <!-- Hero / Header -->
+    <header class="main-header">
+      <div class="container">
+        <p class="header-pretitle">The Wedding Celebration Of</p>
+        <h2 class="header-names">Prashanth&amp; Sahithi</h2>
+        <div class="gold-divider">✦</div>
+      </div>
+    </header>
+
+    <!-- Couple Section (Groom & Bride) -->
+    <section class="section couple-section" id="couple">
+      <div class="container">
+        <h2 class="section-title">Meet the Couple</h2>
+        <div class="couple-grid">
+          
+          <!-- Groom Card -->
+          <div class="couple-card">
+            <div class="img-wrapper">
+              <img src="Images/prashanth.jpg" alt="Groom" />
+            </div>
+            <h3>Prashanth</h3>
+            <p class="parents">S/o Sadak Ganesh &amp; Smt. Sadak Padma</p>
+            <p class="bio">"Every love story is beautiful, but ours is my absolute favourite."</p>
+          </div>
+
+          <!-- Bride Card -->
+          <div class="couple-card">
+            <div class="img-wrapper">
+              <img src="Images/sahithi.jpg" alt="Bride" />
+            </div>
+            <h3>Sahithi</h3>
+            <p class="parents">D/o Sri Yadandla Parvatalu &amp; Smt. Latha</p>
+            <p class="bio">"Finding the one who makes your soul smile is where magic begins."</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Precious Moments</h2>
+        <p class="section-subtitle">Glimpses of our journey together</p>
+        <div class="gallery-grid">
+          <div class="gallery-item" >
+            <img  src="Images/couple.jpeg" alt="Pre-wedding 1" />
+          </div>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- Date & Time Section -->
+    <section class="section datetime-section" id="datetime">
+      <div class="container">
+        <h2 class="section-title">Auspicious Date &amp; Time</h2>
+        
+        <div class="muhurtham-box">
+          <p class="muhurtham-tag">Sumuhurtham</p>
+          <h3 class="event-date">Sunday, 22 November 2026</h3>
+          <p class="event-time">At 11:28 AM (Makara Lagnam)</p>
+        </div>
+
+        <!-- Live Countdown Timer -->
+        <div class="timer-container">
+          <div class="time-box">
+            <span id="days">00</span>
+            <label>Days</label>
+          </div>
+          <div class="time-box">
+            <span id="hours">00</span>
+            <label>Hours</label>
+          </div>
+          <div class="time-box">
+            <span id="minutes">00</span>
+            <label>Mins</label>
+          </div>
+          <div class="time-box">
+            <span id="seconds">00</span>
+            <label>Secs</label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & Venue Section -->
+    <section class="section location-section" id="location">
+      <div class="container">
+        <h2 class="section-title">Venue &amp; Location</h2>
+        
+        <div class="venue-details">
+          <h3>MN GARDENS</h3>
+          <p>Beside ESI Hospital, Ramagundam</p>
+        </div>
+
+        <!-- Map Embed -->
+        <div class="map-wrapper">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32525.279384998084!2d79.4587860130624!3d18.75819470782477!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a32ce9ea09bffff%3A0xcbf2adb7e457ffcf!2sEsi%20Hospital%20Ntpc!5e1!3m2!1sen!2sin!4v1794864692767!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
+        <div class="map-action">
+          <a href="https://maps.app.goo.gl/8UVFfjpF3Pu9b1P18" target="_blank" class="directions-btn">
+            Get Directions via Google Maps 🚗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>We eagerly look forward to your gracious presence and blessings!</p>
+      <small>© 2026 Prashanth&amp; Sahithi Wedding. Crafted with Love.</small>
+    </footer>
+
+  </main>
+
+  <!-- External Script -->
+  <script src="script.js"></script>
+</body>
+</html>
